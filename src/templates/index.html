@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Motivational Quotes</title>
+</head>
+<body>
+    <h1>Motivational Quote Generator</h1>
+    <label for="category">Select a category:</label>
+    <select id="category">
+        <option value="">Any</option>
+        <option value="productivity">Productivity</option>
+        <option value="mindset">Mindset</option>
+        <option value="resilience">Resilience</option>
+        <option value="growth">Growth</option>
+        <option value="confidence">Confidence</option>
+        <option value="impact">Impact</option>
+        <option value="action">Action</option>
+    </select>
+    <button onclick="getQuote()">Get Quote</button>
+    <p id="quote"></p>
+    <p id="author"></p>
+
+    <script>
+        async function getQuote() {
+            const category = document.getElementById("category").value;
+            let url = '/quote';
+            if (category) url += `?category=${category}`;
+            const response = await fetch(url);
+            const data = await response.json();
+            document.getElementById("quote").innerText = `"${data.quote}"`;
+            document.getElementById("author").innerText = data.author ? `- ${data.author}` : '';
+        }
+    </script>
+</body>
+</html>
+
