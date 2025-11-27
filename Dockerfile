@@ -10,7 +10,7 @@ COPY assets/ ./assets
 COPY run.sh .
 RUN chmod +x run.sh
 
-EXPOSE 8000
+EXPOSE 8080
 
 CMD ["./run.sh"]
 
