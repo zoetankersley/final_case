@@ -8,9 +8,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY src/ ./src
 COPY assets/ ./assets
 COPY run.sh .
-RUN chmod +x run.sh
 
-EXPOSE 8080
+EXPOSE 8000
 
 CMD ["./run.sh"]
 
