@@ -25,17 +25,34 @@
 
 To run this project locally, Docker is the supported method. Once Docker is installed, the entire system can be built and run with a short sequence of commands.
 
-1. Make the entry script executable: **chmod +x /Users/zoetankersley/final_case/run.sh**
-2. Build the image: **docker build -t final-case:latest /Users/zoetankersley/final_case**
-3. Run the container, mapping any free host port (example uses 5500) to the app’s internal port 8080: 
-**docker run --rm -p 5500:8080 final-case:latest**
 
-4. Open the app in your browser at ‘http://localhost:5500’. If that host port is already in use, stop the other container (‘docker stop <id>’) or pick another port by changing the left side of ‘-p’, e.g. ‘-p 5501:8080’.
+1. Make the entry script executable:
 
-5. Health check: In the terminal, you can check the health using: **curl http://localhost:5500/health**
+```bash
+chmod +x /Users/zoetankersley/final_case/run.sh
+```
 
-    You can also check the health in your browser once the website is running by simply typing in:
-  **http://localhost:5500/health**
+2. Build the image:
+
+```bash
+docker build -t final-case:latest /Users/zoetankersley/final_case
+```
+4. Run the container, mapping any free host port (example uses 5500) to the app’s internal port 8080:
+
+```bash
+docker run --rm -p 5500:8080 final-case:latest
+```
+
+6. Open the app in your browser at ‘http://localhost:5500’. If that host port is already in use, stop the other container (‘docker stop <id>’) or pick another port by changing the left side of ‘-p’, e.g. ‘-p 5501:8080’.
+
+7. Health check: In the terminal, you can check the health using:
+
+```bash
+curl http://localhost:5500/health
+```
+
+You can also check the health in your browser once the website is running by simply typing in:
+  http://localhost:5500/health
 
 *Note: make sure you replace 5500 with whatever port you map it to initially.
 
@@ -72,6 +89,7 @@ Two improvements to this project that I would be interested in implementing woul
 ## **7) Links**
 
 GitHub Repo: https://github.com/zoetankersley/final_case
+
 
 
 
