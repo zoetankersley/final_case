@@ -43,7 +43,7 @@ docker build -t final-case:latest .
 docker run --rm -p 5500:8080 final-case:latest
 ```
 
-6. Open the app in your browser at ‘http://localhost:5500’. If that host port is already in use, stop the other container (‘docker stop **id**’) or pick another port by changing the left side of ‘-p’, e.g. ‘-p 5501:8080’.
+6. Open the app in your browser at ‘http://localhost:5500’. If that host port is already in use, stop the other container (‘docker stop <**id**>’) or pick another port by changing the left side of ‘-p’, e.g. ‘-p 5501:8080’.
 
 7. Health check: In the terminal, you can check the health using:
 
@@ -89,6 +89,7 @@ Two improvements to this project that I would be interested in implementing woul
 ## **7) Links**
 
 GitHub Repo: https://github.com/zoetankersley/final_case
+
 
 
 
