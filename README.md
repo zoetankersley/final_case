@@ -69,7 +69,9 @@ An alternative I considered, but did not end up using, was FastAPI. FastAPI is b
 
 ## **5) Results & Evaluation**
    
-The Motivational Quote API successfully delivers random or category-specific quotes, based on the request of the user on the dynamic frontend. During testing, the API responded quickly and consistently, using minimal memory due to the lightweight design. A screenshot of the running frontend and its response from the JSON file can be found in the ‘/assets’ directory under ‘output.pdf’. 
+The Motivational Quote API successfully delivers random or category-specific quotes, based on the request of the user on the dynamic frontend. During testing, the API responded quickly and consistently, using minimal memory due to the lightweight design. Below is a screenshot of the running frontend, which can also be found in /assets. 
+
+<img width="1507" height="901" alt="output" src="https://github.com/user-attachments/assets/df4d3b49-2b7b-4cfd-82f1-42386bfbfd67" />
 
 **API sample output:**
 
@@ -89,6 +91,7 @@ Two improvements to this project that I would be interested in implementing woul
 ## **7) Links**
 
 GitHub Repo: https://github.com/zoetankersley/final_case
+
 
 
 
