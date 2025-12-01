@@ -29,13 +29,13 @@ To run this project locally, Docker is the supported method. Once Docker is inst
 1. Make the entry script executable:
 
 ```bash
-chmod +x /Users/zoetankersley/final_case/run.sh
+chmod +x run.sh
 ```
 
 2. Build the image:
 
 ```bash
-docker build -t final-case:latest /Users/zoetankersley/final_case
+docker build -t final-case:latest .
 ```
 4. Run the container, mapping any free host port (example uses 5500) to the app’s internal port 8080:
 
@@ -89,6 +89,7 @@ Two improvements to this project that I would be interested in implementing woul
 ## **7) Links**
 
 GitHub Repo: https://github.com/zoetankersley/final_case
+
 
 
 
